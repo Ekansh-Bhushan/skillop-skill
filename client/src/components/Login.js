@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import "../App.css";
+const BASE_URL = "https://skillop.onrender.com";
 const About = () => {
     const [userType, setUserType] = useState("");
     const [email, setEmail] = useState("");
@@ -37,7 +38,7 @@ const About = () => {
             return
         };
         console.warn(userType, email, password);
-        let result = await fetch("http://localhost:4000/login", {
+        let result = await fetch(`${BASE_URL}/login`, {
             method: 'post',
             body: JSON.stringify({ email, password, userType}),
             headers: {
