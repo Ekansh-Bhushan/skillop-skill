@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom'
-
+const BASE_URL = "https://skillop.onrender.com";
 const About = () => {
     const [linkedinId, setLinkedinId] = useState("");
     const [upiId, setUpiId] = useState("");
