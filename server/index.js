@@ -100,7 +100,7 @@ app.post('/mentor/signup', async (req, res)=>{
             
         })
         } catch(err){
-            res.send({result:"err"})
+            res.status(401).send({result:"err"})
         }
         
     
