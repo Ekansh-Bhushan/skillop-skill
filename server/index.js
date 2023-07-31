@@ -94,10 +94,6 @@ app.post('/mentor/signup', async (req, res)=>{
         else res.send({result, auth: token});
         
     })
-    res.send({
-            result : "uanble to generate token",
-            
-        })
 })
 
 app.post('/mentor/update/expertise',authVerification, async (req, res)=>{
