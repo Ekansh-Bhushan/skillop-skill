@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom'
 // import mentor from "../../../server/db/mentor";
-
+const BASE_URL = "https://skillop.onrender.com";
 const SignUp = () => {
     const [fullname, setFullname] = useState("");
     const [email, setEmail] = useState("");
@@ -33,7 +33,7 @@ const SignUp = () => {
         if ((!email) || (!password) || (!fullname) || (!userType) || !phoneNumber) return;
         console.warn(userType, fullname, email, password, phoneNumber);
 
-        let result = await fetch(`http://localhost:4000/${userType}/signup`, {
+        let result = await fetch(`${BASE_URL}/${userType}/signup`, {
             method: 'post',
             body: JSON.stringify({ fullname, email, password, phoneNumber, userType }),
             headers: {
