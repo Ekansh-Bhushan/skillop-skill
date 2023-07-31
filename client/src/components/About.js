@@ -36,7 +36,7 @@ const About = () => {
         console.warn(linkedinId, upiId);
 
         if (userType === "mentor") {
-            let updateLinkedinId = await fetch("http://localhost:4000/mentor/update/linkedinId", {
+            let updateLinkedinId = await fetch(`${BASE_URL}/mentor/update/linkedinId`, {
                 method: 'post',
                 body: JSON.stringify({ email, userType, linkedinId }),
                 headers: {
@@ -47,7 +47,7 @@ const About = () => {
             updateLinkedinId = await updateLinkedinId.json();
             console.warn(updateLinkedinId);
 
-            let updateUpiId = await fetch("http://localhost:4000/mentor/update/upiId", {
+            let updateUpiId = await fetch(`${BASE_URL}/mentor/update/upiId`, {
                 method: 'post',
                 body: JSON.stringify({ email, userType, upiId }),
                 headers: {
@@ -58,7 +58,7 @@ const About = () => {
             updateUpiId = await updateUpiId.json();
             console.warn(updateUpiId);
 
-            let step3Done = await fetch("http://localhost:4000/mentor/update/step3", {
+            let step3Done = await fetch(`${BASE_URL}/mentor/update/step3`, {
                 method: 'post',
                 body: JSON.stringify({ email, userType, upiId }),
                 headers: {
@@ -76,7 +76,7 @@ const About = () => {
                 navigate('/')
             }
         } else if (userType === "mentee") {
-            let updateLinkedinId = await fetch("http://localhost:4000/mentee/update/linkedinId", {
+            let updateLinkedinId = await fetch(`${BASE_URL}/mentee/update/linkedinId`, {
                 method: 'post',
                 body: JSON.stringify({ email, userType, linkedinId }),
                 headers: {
@@ -87,7 +87,7 @@ const About = () => {
             updateLinkedinId = await updateLinkedinId.json();
             console.warn(updateLinkedinId);
 
-            let updateUpiId = await fetch("http://localhost:4000/mentee/update/upiId", {
+            let updateUpiId = await fetch(`${BASE_URL}/mentee/update/upiId`, {
                 method: 'post',
                 body: JSON.stringify({ email, userType, upiId }),
                 headers: {
@@ -98,7 +98,7 @@ const About = () => {
             updateUpiId = await updateUpiId.json();
             console.warn(updateUpiId);
 
-            let step3Done = await fetch("http://localhost:4000/mentee/update/step3", {
+            let step3Done = await fetch(`${BASE_URL}/mentee/update/step3`, {
                 method: 'post',
                 body: JSON.stringify({ email, userType, upiId }),
                 headers: {
