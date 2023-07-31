@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "npm install mongooes"
+    "build" : "npm install mongoose"
   },
   "author": "Swaroop Dora",
   "license": "ISC",
@@ -14,7 +14,8 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.1",
-    "razorpay": "^2.9.1"
+    "razorpay": "^2.9.1",
+    "mongoose": "^7.4.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
