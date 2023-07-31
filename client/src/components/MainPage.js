@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import mainLogo from'./logo.png';
 import { useNavigate } from 'react-router-dom'
-
+const BASE_URL = "https://skillop.onrender.com";
 const style = {
     "display": "unset",
     // "margin": '0',
@@ -34,7 +34,7 @@ const MainPage = () => {
     let userType = JSON.parse(localStorage.getItem("userType"));
     // const mentors = [];
     const getMentors = async () => {
-        let result = await fetch("http://localhost:4000/getMentors", {
+        let result = await fetch(`${BASE_URL}/getMentors`, {
             headers: {
                 "authorization": `sdf ${auth}`
             }
@@ -44,7 +44,7 @@ const MainPage = () => {
     }
 
     const getAllOrder = async () => {
-        let result = await fetch("http://localhost:4000/getAllOrder", {
+        let result = await fetch(`${BASE_URL}/getAllOrder`, {
             headers: {
                 "authorization": `sdf ${auth}`
             }
