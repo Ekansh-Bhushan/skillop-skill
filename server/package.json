@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "npm i --force"
+    "build" : "npm install mongooes"
   },
   "author": "Swaroop Dora",
   "license": "ISC",
