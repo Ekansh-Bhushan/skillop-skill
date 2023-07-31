@@ -89,8 +89,12 @@ app.post('/mentor/signup', async (req, res)=>{
         result = result.toObject();
         // delete result.password;
         Jwt.sign({result}, jwtKey, (err, token)=>{
-            if(err) res.send({result: "Some thing went wrong"});
-            else res.send({result, auth: token});
+            if(err) {
+                res.send({result: "Some thing went wrong"});
+            }
+            else {
+                res.send({result, auth: token});
+            }
             
         })
     
