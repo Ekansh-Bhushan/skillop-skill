@@ -87,7 +87,7 @@ app.post('/mentor/signup', async (req, res)=>{
         
         let result = await mentor.save();
         result = result.toObject();
-        delete result.password;
+        // delete result.password;
         Jwt.sign({result}, jwtKey, (err, token)=>{
             if(err) res.send({result: "Some thing went wrong"});
             else res.send({result, auth: token});
