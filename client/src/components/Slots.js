@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom'
+const BASE_URL = "https://skillop.onrender.com";
 const style = {
     "overflow": "scroll"
     // "margin": '0',
@@ -69,7 +70,7 @@ const Slots = () => {
 
         
 
-        let result = await fetch("http://localhost:4000/mentor/update/slots", {
+        let result = await fetch(`${BASE_URL}/mentor/update/slots`, {
             method: 'post',
             body: JSON.stringify({ email, userType, availabilityString:{
                 saturday, sunday, monday, tuesday, wednesday, thursday, friday
@@ -87,7 +88,7 @@ const Slots = () => {
 
             return;
         }
-        let step2Complition = await fetch("http://localhost:4000/mentor/update/step2", {
+        let step2Complition = await fetch(`${BASE_URL}/mentor/update/step2`, {
             method: 'post',
             body: JSON.stringify({ email, userType }),
             headers: {
