@@ -64,6 +64,10 @@ app.post('/mentor/signup', async (req, res)=>{
     if(req.body["userType"]!="mentor"){
         console.log(req.body["userType"]);
         console.log("wrong entry!");
+        res.send({
+            result : "wrong user type",
+            
+        })
         return;
     }
     const doesMentorExist = await Mentor.findOne({
