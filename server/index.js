@@ -463,11 +463,7 @@ app.post('/login', async (req, res)=>{
 
 // GetMentor
 app.get("/getMentors", async (req, resp) => {
-    const mentors = await Mentor.find({
-        step1:true,
-        step2:true,
-        step3:true
-    }).select("-password");
+    const mentors = await Mentor.find({}).select("-password");
     if (mentors.length > 0) {
         resp.send(mentors)
     } else {
