@@ -68,7 +68,7 @@ app.post('/mentor/signup', async (req, res)=>{
             result : "wrong user type",
             
         })
-        return;
+    
     }
     const doesMentorExist = await Mentor.findOne({
         '$or':[
