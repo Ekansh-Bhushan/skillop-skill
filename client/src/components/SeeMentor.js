@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import mainLogo from'./logo.png';
 import { useNavigate ,useParams} from 'react-router-dom'
-
+const BASE_URL = "https://skillop.onrender.com";
 const style = {
     "display": "unset",
     "overflow": "hidden"
@@ -31,7 +31,7 @@ const SeeMentor = () => {
         navigate('/login');
     }
     const getMentorDetail = async ()=>{
-        let result = await fetch(`http://localhost:4000/mentor/${params.id}`);
+        let result = await fetch(`${BASE_URL}/mentor/${params.id}`);
         result = await result.json();
         setMentorDetail(result);
     }
@@ -41,7 +41,7 @@ const SeeMentor = () => {
     let userType = JSON.parse(localStorage.getItem("userType"));
 
     const handleBooking = async ()=>{
-        let response = await fetch("http://localhost:4000/order", {
+        let response = await fetch("${BASE_URL}/order", {
             method: 'post',
             body: JSON.stringify({ mentee: userData._id, mentor: params.id, 
                 slot : mentorDetail.availabilityString[["sunday","monday","tuesday","wednesday","thursday","friday","saturday"][(new Date()).getDay()]].split(",")[0],
@@ -60,7 +60,7 @@ const SeeMentor = () => {
     }
     // const mentors = [];
     // const getMentors = async () => {
-    //     let result = await fetch("http://localhost:4000/getMentors", {
+    //     let result = await fetch("${BASE_URL}/getMentors", {
     //         headers: {
     //             "authorization": `sdf ${auth}`
     //         }
