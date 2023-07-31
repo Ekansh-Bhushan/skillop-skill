@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom'
-
+const BASE_URL = "https://skillop.onrender.com";
 const Expertise = () => {
     const [expertise, setExpertise] = useState("");
     const [pastExp, setPastExp] = useState("");
@@ -36,7 +36,7 @@ const Expertise = () => {
         console.warn(expertise, pastExp, futurePlans, about);
 
         if (userType === "mentor") {
-            let resultUpdateExpertise = await fetch(`http://localhost:4000/mentor/update/expertise`, {
+            let resultUpdateExpertise = await fetch(`${BASE_URL}/mentor/update/expertise`, {
                 method: 'post',
                 body: JSON.stringify({ expertise, email, userType }),
                 headers: {
@@ -47,7 +47,7 @@ const Expertise = () => {
             resultUpdateExpertise = await resultUpdateExpertise.json();
             console.warn(resultUpdateExpertise);
 
-            let resultUpdatePastExp = await fetch(`http://localhost:4000/mentor/update/pastExp`, {
+            let resultUpdatePastExp = await fetch(`${BASE_URL}/mentor/update/pastExp`, {
                 method: 'post',
                 body: JSON.stringify({ pastExp, email, userType }),
                 headers: {
@@ -58,7 +58,7 @@ const Expertise = () => {
             resultUpdatePastExp = await resultUpdatePastExp.json();
             console.warn(resultUpdatePastExp);
 
-            let resultUpdateAbout = await fetch(`http://localhost:4000/mentor/update/about`, {
+            let resultUpdateAbout = await fetch(`${BASE_URL}/mentor/update/about`, {
                 method: 'post',
                 body: JSON.stringify({ about, email, userType }),
                 headers: {
@@ -69,7 +69,7 @@ const Expertise = () => {
             resultUpdateAbout = await resultUpdateAbout.json();
             console.warn(resultUpdateAbout);
 
-            let resultUpdateFuturePlans = await fetch(`http://localhost:4000/mentor/update/futurePlans`, {
+            let resultUpdateFuturePlans = await fetch(`${BASE_URL}/mentor/update/futurePlans`, {
                 method: 'post',
                 body: JSON.stringify({ futurePlans, email, userType }),
                 headers: {
@@ -80,7 +80,7 @@ const Expertise = () => {
             resultUpdateFuturePlans = await resultUpdateFuturePlans.json();
             console.warn(resultUpdateFuturePlans);
 
-            let notifyingStep1Completed = await fetch(`http://localhost:4000/mentor/update/step1`, {
+            let notifyingStep1Completed = await fetch(`${BASE_URL}/mentor/update/step1`, {
                 method: 'post',
                 body: JSON.stringify({ email, userType }),
                 headers: {
@@ -98,7 +98,7 @@ const Expertise = () => {
         navigate('/slots');
 
         } else if (userType === "mentee") {
-            let resultUpdateExpertise = await fetch(`http://localhost:4000/mentee/update/expertise`, {
+            let resultUpdateExpertise = await fetch(`${BASE_URL}/mentee/update/expertise`, {
                 method: 'post',
                 body: JSON.stringify({ expertise, email, userType }),
                 headers: {
@@ -109,7 +109,7 @@ const Expertise = () => {
             resultUpdateExpertise = await resultUpdateExpertise.json();
             console.warn(resultUpdateExpertise);
 
-            let resultUpdatePastExp = await fetch(`http://localhost:4000/mentee/update/pastExp`, {
+            let resultUpdatePastExp = await fetch(`${BASE_URL}/mentee/update/pastExp`, {
                 method: 'post',
                 body: JSON.stringify({ pastExp, email, userType }),
                 headers: {
@@ -120,7 +120,7 @@ const Expertise = () => {
             resultUpdatePastExp = await resultUpdatePastExp.json();
             console.warn(resultUpdatePastExp);
 
-            let resultUpdateAbout = await fetch(`http://localhost:4000/mentee/update/about`, {
+            let resultUpdateAbout = await fetch(`${BASE_URL}/mentee/update/about`, {
                 method: 'post',
                 body: JSON.stringify({ about, email, userType }),
                 headers: {
@@ -131,7 +131,7 @@ const Expertise = () => {
             resultUpdateAbout = await resultUpdateAbout.json();
             console.warn(resultUpdateAbout);
 
-            let resultUpdateFuturePlans = await fetch(`http://localhost:4000/mentee/update/futurePlans`, {
+            let resultUpdateFuturePlans = await fetch(`${BASE_URL}/mentee/update/futurePlans`, {
                 method: 'post',
                 body: JSON.stringify({ futurePlans, email, userType }),
                 headers: {
@@ -142,7 +142,7 @@ const Expertise = () => {
             resultUpdateFuturePlans = await resultUpdateFuturePlans.json();
             console.warn(resultUpdateFuturePlans);
 
-            let notifyingStep1Completed = await fetch(`http://localhost:4000/mentee/update/step1`, {
+            let notifyingStep1Completed = await fetch(`${BASE_URL}/mentee/update/step1`, {
                 method: 'post',
                 body: JSON.stringify({ email, userType }),
                 headers: {
