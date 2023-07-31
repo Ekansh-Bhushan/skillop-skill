@@ -68,7 +68,7 @@ app.post('/mentor/signup', async (req, res)=>{
             result : "wrong user type",
             
         })
-    
+        return;
     }
     const doesMentorExist = await Mentor.findOne({
         '$or':[
@@ -92,7 +92,12 @@ app.post('/mentor/signup', async (req, res)=>{
     Jwt.sign({result}, jwtKey, (err, token)=>{
         if(err) res.send({result: "Some thing went wrong"});
         else res.send({result, auth: token});
+        
     })
+    res.send({
+            result : "uanble to generate token",
+            
+        })
 })
 
 app.post('/mentor/update/expertise',authVerification, async (req, res)=>{
