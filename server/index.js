@@ -79,7 +79,8 @@ app.post('/mentor/signup', async (req, res)=>{
     if(doesMentorExist){
         res.send({result: "An account with same email or phoneNumber already exist"});
     }else{
-        let mentor = new Mentor();
+        try{
+            let mentor = new Mentor();
         mentor.fullname = req.body.fullname;
         mentor.email = req.body.email;
         mentor.phoneNumber = req.body.phoneNumber;
@@ -88,15 +89,20 @@ app.post('/mentor/signup', async (req, res)=>{
         let result = await mentor.save();
         result = result.toObject();
         // delete result.password;
+        
         Jwt.sign({result}, jwtKey, (err, token)=>{
             if(err) {
-                res.send({result: "Some thing went wrong"});
+                res.status(401).send({result: "Some thing went wrong"});
             }
             else {
                 res.send({result, auth: token});
             }
             
         })
+        } catch(err){
+            res.send({result:"err"})
+        }
+        
     
     }
     
