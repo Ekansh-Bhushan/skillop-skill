@@ -78,7 +78,6 @@ app.post('/mentor/signup', async (req, res)=>{
     });
     if(doesMentorExist){
         res.send({result: "An account with same email or phoneNumber already exist"});
-        return;
     }else{
         let mentor = new Mentor();
         mentor.fullname = req.body.fullname;
