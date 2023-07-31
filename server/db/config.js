@@ -1,4 +1,4 @@
 const mongoose = require("mongoose");
-const MongoURL = "mongodb://127.0.0.1:27017";
+const MongoURL = "mongodb+srv://ekanshbhushan:PC6uj362iYe0zu6X@cluster0.z6hljps.mongodb.net/?retryWrites=true&w=majority";
 const DB = "skillop-db"
 mongoose.connect(`${MongoURL}/${DB}`);
