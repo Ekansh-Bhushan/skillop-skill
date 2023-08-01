@@ -115,7 +115,7 @@ const Home=()=>{
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
       <div>
-        <img src="img/4.jpg" alt="" />
+        <img src="/img/4.jpg" alt="" />
         <h3>Marie Mikhail</h3>
         <p>
         A professional recruiter, she expresses her "passion for recruiting" in the first sentence, while using that sentence to hook her profile visitors into a brief story of her background.
