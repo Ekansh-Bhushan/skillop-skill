@@ -41,6 +41,10 @@ const SeeMentor = () => {
     let userType = JSON.parse(localStorage.getItem("userType"));
 
     const handleBooking = async ()=>{
+        console.warn({ mentee: userData._id, mentor: params.id, 
+                slot : mentorDetail.availabilityString[["sunday","monday","tuesday","wednesday","thursday","friday","saturday"][(new Date()).getDay()]].split(",")[0],
+                day: ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"][(new Date()).getDay()]
+            });
         let response = await fetch("${BASE_URL}/order", {
             method: 'post',
             body: JSON.stringify({ mentee: userData._id, mentor: params.id, 
