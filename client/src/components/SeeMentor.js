@@ -26,6 +26,8 @@ const SeeMentor = () => {
     const navigate = useNavigate()
     const params = useParams();
     const [mentorDetail, setMentorDetail] = useState(" ");
+    const [displayPaymentDetailState, setDisplayPaymentDetailState] = useState(false);
+
     const logout = ()=>{
         localStorage.clear();
         navigate('/login');
@@ -40,6 +42,9 @@ const SeeMentor = () => {
     const userData = JSON.parse(user);
     let userType = JSON.parse(localStorage.getItem("userType"));
 
+    const handleBookingStep1 = () => {
+        setDisplayPaymentDetailState(true)
+    }
     const handleBooking = async ()=>{
         console.warn({ mentee: userData._id, mentor: params.id, 
                 slot : mentorDetail.availabilityString[["sunday","monday","tuesday","wednesday","thursday","friday","saturday"][(new Date()).getDay()]].split(",")[0],
@@ -60,6 +65,7 @@ const SeeMentor = () => {
         console.warn(response.result);
         if(response.result){
             alert("Order Placed We will contact you soon");
+            setDisplayPaymentDetailState(false)
         }
         
     }
@@ -233,6 +239,54 @@ const SeeMentor = () => {
 
 
                     </div>
+
+                        {displayPaymentDetailState ? <div style={{
+                        position: "absolute",
+                        width: "90vw",
+                        height: "70vh",
+                        backgroundColor: "rgb(225, 225, 225)",
+                        display: "flex",
+                        alignItems: "flex-start",
+                        justifyContent: "center",
+                        flexWrap: "wrap",
+                        flexDirection: "row",
+                    }}>
+                        <div style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                        }}>
+                            <a href="https://pay.upilink.in/pay/krissmanng@okaxis?am=0"><img src={QR} alt="QR" style={{ width: "250px", marginLeft: "30px", marginRight: "30px", marginTop: "30px" }} /></a>
+                            <p style={{ marginLeft: "30px", marginRight: "30px" }}>Scan or click the QR code to Pay</p>
+                        </div>
+                        <div style={{ width: "250px", marginLeft: "30px", marginRight: "30px", marginTop: "30px" }}>
+                            <ul>
+                                <li>
+                                    Mentee Name : {userData.fullname}
+                                </li>
+                                <li>
+                                    Mentor phone Number : {mentorDetail.phoneNumber}
+                                </li>
+                                <li>
+                                    Mentor Name : {mentorDetail.fullname}
+                                </li>
+                                <br />
+                                <li>
+                                    After payment click here <a onClick={handleBooking} style={{
+                                        cursor: "pointer",
+                                        display: "inline-block",
+                                        border: "0",
+                                        fontWeight: "bold",
+                                        padding: "10px 20px",
+                                        background: "#413d3d",
+                                        color: "white",
+                                        fontSize: "15px",
+                                    }}>Payed</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div> : <></>}
                         <ul>
                     <li>Mentor Name: {mentorDetail.fullname}</li><br/>
                     <li>Email: {mentorDetail.email}</li><br/>
