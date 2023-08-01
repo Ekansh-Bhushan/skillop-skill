@@ -57,8 +57,8 @@ const SeeMentor = () => {
             }
         });
         response = await response.json();
-        console.warn(response);
-        if(response.result._id){
+        console.warn(response.result);
+        if(response.result){
             alert("Order Placed We will contact you soon");
         }
         
