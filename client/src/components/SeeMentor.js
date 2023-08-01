@@ -56,7 +56,7 @@ const SeeMentor = () => {
                 "authorization": `sdf ${auth}`
             }
         });
-        response = response.json();
+        response = await response.json();
         console.warn(response);
         if(response._id){
             alert("Order Placed We will contact you soon");
