@@ -99,7 +99,7 @@ const Home=()=>{
     {/* <!-- Home cards 1 --> */}
     <section class="home-cards">
       <div>
-        <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/img/3.jpg" alt=""/>
+        <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/3.jpg" alt=""/>
         <h3> Lisa Quine</h3>
         <p>
         Creative professionals who specialize in visual art may find it challenging to balance the writing of their bio and displaying of their portfolio.
@@ -107,7 +107,7 @@ const Home=()=>{
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
       <div>
-        <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/img/1.jpg" alt="" />
+        <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/1.jpg" alt="" />
         <h3>Jason Frankovitz</h3>
         <p>
         Jason Frankovitz is a software engineering expert based in Los Angeles with over 25 years of experience. 
@@ -115,7 +115,7 @@ const Home=()=>{
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
       <div>
-        <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/img/4.jpg" alt="" />
+        <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/4.jpg" alt="" />
         <h3>Marie Mikhail</h3>
         <p>
         A professional recruiter, she expresses her "passion for recruiting" in the first sentence, while using that sentence to hook her profile visitors into a brief story of her background.
@@ -123,7 +123,7 @@ const Home=()=>{
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
       <div>
-        <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/img/2.jpg" alt="" />
+        <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/2.jpg" alt="" />
         <h3>Sigurd Meldal</h3>
         <p>
         Sigurd Meldal has an extensive academic record in Computer Science counting 40+ years of research and teaching experience
@@ -150,7 +150,7 @@ const Home=()=>{
     {/* <!-- Home cards 2 --> */}
 			<section class="home-cards">
 				<div>
-					<img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/img/58.jpeg" alt="" />
+					<img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/58.jpeg" alt="" />
 					{/* <!-- <h3>xyz</h3> -->
 					<!-- <p>
 						FSRGKMSGHJFOKGMJSLKFOPSME
@@ -160,7 +160,7 @@ const Home=()=>{
 					<!-- <a href="/">Stories <i class="fas fa-chevron-right"></i></a> --> */}
 				</div>
 				<div>
-					<img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/img/57.jpeg" alt="" />
+					<img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/57.jpeg" alt="" />
 					{/* <!-- <h3>xyz</h3> -->
 					<!-- <p>
 						FSRGKMSGHJFOKGMJSLKFOP
@@ -170,7 +170,7 @@ const Home=()=>{
 					{/* <!-- <a href="/">Stories <i class="fas fa-chevron-right"></i></a> --> */}
 				</div>
 				<div>
-					<img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/img/56.jpeg" alt="" />
+					<img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/56.jpeg" alt="" />
 					{/* <!-- <h3>xyz</h3> -->
 					<!-- <p>
 						FSRGKMSGHJFOKGMJSLKFOPSMEK
@@ -180,7 +180,7 @@ const Home=()=>{
 					{/* <!-- <a href="/">Stories <i class="fas fa-chevron-right"></i></a> --> */}
 				</div>
 				<div>
-					<img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/img/55.jpeg" alt="" />
+					<img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/55.jpeg" alt="" />
 					{/* <!-- <h3>xyz</h3> --> */}
 					{/* <!-- <p>
 						FSRGKMSGHJFOKGMJSLKFOPSMEKF
