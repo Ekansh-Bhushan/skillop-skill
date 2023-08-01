@@ -91,7 +91,17 @@ const Home=()=>{
       <p style={{fontWeight:500,}}>
         Shuru se sheruaat karte hai
       </p>
-      <a href="/signup" class="btn" style={{fontWeight:700, color:"green", fontSize:25}} >
+      <a href="/signup" class="btn" style={{padding: 0.75rem;
+    display: "block";
+    textDecoration: "none";
+    backgroundColor: "rgb(71 71 71)";
+    color: "#f3f3f3";
+    textAlign: "center";
+    borderRadius: "0.25rem";
+    cursor: "pointer";
+    transition: "0.3s";
+    paddingLeft: "1rem";
+    paddingRight: "1rem";}} >
         Join Us <i class="fas fa-chevron-right"></i>
       </a>
     </header>
