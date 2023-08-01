@@ -294,7 +294,7 @@ const SeeMentor = () => {
                     <li>About: {mentorDetail.about}</li><br/>
                     <li>pastExp: {mentorDetail.pastExp}</li><br/>
                     <li>futurePlans: {mentorDetail.futurePlans}</li><br/>
-                    <li><button onClick={handleBooking} style={{width:"200px"}}>Book Slot</button></li><br/>
+                    <li><button onClick={handleBookingStep1} style={{width:"200px"}}>Book Slot</button></li><br/>
                     
                     </ul>
                 </div>
