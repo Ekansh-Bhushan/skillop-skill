@@ -51,7 +51,7 @@ const Home=()=>{
   <div class="container">
     {/* <!-- Nav --> */}
     <nav class="main-nav">
-      <img src="https://yt3.ggpht.com/a/AATXAJxP8PSVhkvzqsU-NBw2bdW80szBbp9KNz_6sA=s900-c-k-c0xffffffff-no-rj-mo" alt="Skillop" class="logo"/>
+      <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/logo.png" alt="Skillop" class="logo"/>
 
       <ul class="main-menu">
         
