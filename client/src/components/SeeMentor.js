@@ -43,6 +43,7 @@ const SeeMentor = () => {
     let userType = JSON.parse(localStorage.getItem("userType"));
 
     const handleBookingStep1 = () => {
+        console.warn("Why not updating");
         setDisplayPaymentDetailState(true)
     }
     const handleBooking = async ()=>{
