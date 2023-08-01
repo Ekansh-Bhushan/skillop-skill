@@ -151,7 +151,17 @@ const Home=()=>{
             <li>Build Your community</li>
             <li>Engage and Earn</li>
             </ul></p>
-          <a href="/signup" class="btn">
+          <a href="/signup" class="btn"  style={{padding: 0.75rem;
+    display: "block";
+    textDecoration: "none";
+    backgroundColor: "rgb(71 71 71)";
+    color: "#f3f3f3";
+    textAlign: "center";
+    borderRadius: "0.25rem";
+    cursor: "pointer";
+    transition: "0.3s";
+    paddingLeft: "1rem";
+    paddingRight: "1rem";}} >
             Apply Now <i class="fas fa-chevron-right"></i>
           </a>
       </div>
