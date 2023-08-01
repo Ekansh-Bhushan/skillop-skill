@@ -89,7 +89,7 @@ const Home=()=>{
             <span id="p_head">P</span>
          </h2>
       <p style={{fontWeight:500,}}>
-        Shuru se sharuwat karte hai
+        Shuru se sheruaat karte hai
       </p>
       <a href="/signup" class="btn" style={{fontWeight:700, color:"green", fontSize:25}} >
         Join Us <i class="fas fa-chevron-right"></i>
