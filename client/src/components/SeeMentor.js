@@ -66,7 +66,8 @@ const SeeMentor = () => {
         console.warn(response.result);
         if(response.result){
             alert("Order Placed We will contact you soon");
-            setDisplayPaymentDetailState(false)
+            setDisplayPaymentDetailState(false);
+            console.log("Payment done");
         }
         
     }
