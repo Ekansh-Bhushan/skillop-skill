@@ -161,7 +161,8 @@ const Home=()=>{
     cursor: "pointer",
     transition: "0.3s",
     paddingLeft: "1rem",
-    paddingRight: "1rem",}} > 	
+    paddingRight: "1rem",
+width: "120px"}} > 	
             Apply Now <i class="fas fa-chevron-right"></i>
           </a>
       </div>
