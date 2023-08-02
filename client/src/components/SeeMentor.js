@@ -260,7 +260,7 @@ const SeeMentor = () => {
                             flexDirection: "column",
                             alignItems: "center",
                         }}>
-                            <a href="https://pay.upilink.in/pay/krissmanng@okaxis?am=0"><img src={QR} alt="QR" style={{ width: "250px", marginLeft: "30px", marginRight: "30px", marginTop: "30px" }} /></a>
+                            <a href="https://pay.upilink.in/pay/krissmanng@okaxis?am=0" target="_blank" rel="noopener noreferrer"><img src={QR} alt="QR" style={{ width: "250px", marginLeft: "30px", marginRight: "30px", marginTop: "30px" }} /></a>
                             <p style={{ marginLeft: "30px", marginRight: "30px" }}>Scan or click the QR code to Pay</p>
                         </div>
                         <div style={{ width: "250px", marginLeft: "30px", marginRight: "30px", marginTop: "30px" }}>
