@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import mainLogo from'./logo.png';
 import { useNavigate ,useParams} from 'react-router-dom'
+import QR from "./QR.jpeg"
+
 const BASE_URL = "https://skillop.onrender.com";
 const style = {
     "display": "unset",
