@@ -110,7 +110,7 @@ const Home=()=>{
     <section class="home-cards">
       <div>
         <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/3.jpg" alt=""/>
-        <h3> Kartik Walia</h3>
+        <h3>ABC</h3>
         <p>
        	A Second year undergraduate student pursing degree in Btech from DTU and a highly active in making WebD.
         </p>
@@ -120,7 +120,7 @@ const Home=()=>{
         <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/1.jpg" alt="" />
         <h3>Harsh Vardhan</h3>
         <p>
-       Meet Harsh Vardhan, the Vice President and Corporate Head (Co-founder) of Society SkillOP. With a wealth of experience in marketing, Harsh has played a pivotal role in driving the company's growth and success. His strategic insights, innovative thinking, and dedication to excellence have made him a key driving force behind our achievements. Harsh's commitment to fostering skill development and his exceptional leadership qualities make him an invaluable asset to our team
+       Meet Harsh Vardhan, the Vice President and Corporate Head (Co-founder) of Society SkillOP. With a wealth of experience in marketing, Harsh has played a pivotal role in driving the team's growth and success. His strategic insights, innovative thinking, and dedication to excellence have made him a key driving force behind our achievements. Harsh's commitment to fostering skill development and his exceptional leadership qualities make him an invaluable asset to our team
         </p>
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
