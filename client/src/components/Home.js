@@ -112,7 +112,7 @@ const Home=()=>{
         <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/3.jpg" alt=""/>
         <h3>Gaurav Sharma</h3>
         <p>
-       	Famous as Dadaji, a highly intelligent student in DTU.
+       	A highly intelligent student in DTU.
         </p>
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
