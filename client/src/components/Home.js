@@ -110,9 +110,9 @@ const Home=()=>{
     <section class="home-cards">
       <div>
         <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/3.jpg" alt=""/>
-        <h3>ABC</h3>
+        <h3>Gaurav Sharma</h3>
         <p>
-       	A Second year undergraduate student pursing degree in Btech from DTU and a highly active in making WebD.
+       	Famous as Dadaji, a highly intelligent student in DTU.
         </p>
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
@@ -126,9 +126,9 @@ const Home=()=>{
       </div>
       <div>
         <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/4.jpg" alt="" />
-        <h3>Marie Mikhail</h3>
+        <h3>Pratham Mehra</h3>
         <p>
-        A professional recruiter, she expresses her "passion for recruiting" in the first sentence, while using that sentence to hook her profile visitors into a brief story of her background.
+	I have a high experience in python programming language. Worked With AIIMS in DTU.
         </p>
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
