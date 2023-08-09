@@ -110,17 +110,17 @@ const Home=()=>{
     <section class="home-cards">
       <div>
         <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/3.jpg" alt=""/>
-        <h3> Lisa Quine</h3>
+        <h3> Kartik Walia</h3>
         <p>
-        Creative professionals who specialize in visual art may find it challenging to balance the writing of their bio and displaying of their portfolio.
+       	A Second year undergraduate student pursing degree in Btech from DTU and a highly active in making WebD.
         </p>
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
       <div>
         <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/1.jpg" alt="" />
-        <h3>Jason Frankovitz</h3>
+        <h3>Harsh Vardhan</h3>
         <p>
-        Jason Frankovitz is a software engineering expert based in Los Angeles with over 25 years of experience. 
+       	A second year student in DTU pursing degree in Btech ECE.
         </p>
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
