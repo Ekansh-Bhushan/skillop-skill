@@ -128,7 +128,7 @@ const Home=()=>{
         <img src="https://raw.githubusercontent.com/Ekansh-Bhushan/skillop-skill/main/client/public/Img/4.jpg" alt="" />
         <h3>Pratham Mehra</h3>
         <p>
-	I have a high experience in python programming language. Worked With AIIMS in DTU.
+	Introducing Pratham Mehra, the AIML Head of Society SkillOP. With a year of hands-on experience in Python coding, Pratham brings technical prowess and a passion for artificial intelligence and machine learning to our team. Currently in his second year of the Electronics and Communication Engineering program at Delhi Technological University, Pratham exemplifies the fusion of academic excellence and practical skill. His dedication to advancing AI technologies and his academic journey make him an integral part of our innovative endeavors.
         </p>
         <a href="/signup">View Profile <i class="fas fa-chevron-right"></i></a>
       </div>
